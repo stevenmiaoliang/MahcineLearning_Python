@@ -102,7 +102,7 @@ if __name__ == '__main__':
       #'KNN',
     test_classifiers = ['NB',  'LR', 'RF', 'DT', 'SVM', 'GBDT']
     classifiers = {'NB':naive_bayes_classifier,   
-#z                  'KNN':knn_classifier,
+#                  'KNN':knn_classifier,
                    'LR':logistic_regression_classifier,  
                    'RF':random_forest_classifier,  
                    'DT':decision_tree_classifier,  
