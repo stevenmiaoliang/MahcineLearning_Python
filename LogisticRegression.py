@@ -18,7 +18,7 @@ def trainLogRegreesion(train_x,train_y,opts):
     alpha = opts['alpha'];
     maxIter = opts['maxIter']
     weights = ones((numfeatures,1))
-    for k in range(numSamples):
+    for k in range(maxIter):
         if(opts['optimizeType'] == 'gradDescent'):
             output = sigmoid(train_x*weights)
             error = train_y - output

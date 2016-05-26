@@ -2,6 +2,7 @@ from numpy import *
 import matplotlib.pyplot as plt
 import time
 from LogisticRegression import *
+from LinearRegreesion import *
 def loadData():
     train_x = []
     train_y = []
@@ -20,8 +21,10 @@ test_x = train_x; test_y = train_y
 
 ## step 2: training...
 print "step 2: training..."
-opts = {'alpha': 0.01, 'maxIter': 10000, 'optimizeType': 'gradDescent'}
-optimalWeights = trainLogRegreesion(train_x, train_y, opts)
+opts = {'alpha': 0.1, 'maxIter': 1000, 'optimizeType': 'gradDescent'}
+#optimalWeights = trainLogRegreesion(train_x, train_y, opts)
+optimalWeights = LMS(train_x, train_y, opts)
+#weights = leastSquares(train_x,train_y)
 
 ## step 3: testing
 print "step 3: testing..."
