@@ -9,9 +9,9 @@ from numpy import *
 import matplotlib.pyplot as plt
 import time
 
+
 def sigmoid(x):
     return 1.0/(1+exp(-x))
-
 def trainLogRegreesion(train_x,train_y,opts):
     startTime = time.time()
     numSamples,numfeatures = shape(train_x)
