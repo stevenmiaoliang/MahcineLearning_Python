@@ -7,7 +7,7 @@ def distanceEuler(features1,features2):
     sum_of_squares = sum([pow(features1[i]-features2[i],2) for i in range(len(features1))])
     return  sum_of_squares
 
-# do normalied
+#do normalied
 def distancePerson(features1,features2):
     if len(features1) != len(features2):
         return -1
